@@ -1,12 +1,14 @@
 {
-    "name": "@mparticle/web-sdk",
+    "name": "@itly/mparticle-web-sdk",
     "version": "2.11.15",
     "description": "mParticle core SDK for web applications",
     "license": "Apache-2.0",
     "keywords": [
         "mparticle",
         "analytics",
-        "cdp"
+        "cdp",
+        "itly",
+        "iteratively"
     ],
     "files": [
         "dist/mparticle.common.js",

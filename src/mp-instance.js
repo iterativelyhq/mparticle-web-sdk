@@ -348,10 +348,32 @@ export default function mParticleInstance(instanceName) {
             return;
         }
 
+        let $itly,
+            eventProperties = eventInfo;
+
+        if (self._Helpers.isObject(eventProperties)) {
+            ({ $itly, ...eventProperties } = eventInfo);
+        }
+
+        if (self._itly && !$itly) {
+            self._itly.track({
+                name: eventName,
+                properties: eventProperties,
+                metadata: {
+                    mparticle: {
+                        eventType,
+                        customFlags,
+                    },
+                },
+            });
+
+            return;
+        }
+
         self._Events.logEvent({
             messageType: Types.MessageType.PageEvent,
             name: eventName,
-            data: eventInfo,
+            data: eventProperties,
             eventType: eventType,
             customFlags: customFlags,
         });
@@ -1137,6 +1159,8 @@ function completeSDKInitialization(apiKey, config, mpInstance) {
                 ];
         }
     }
+
+    mpInstance._itly = config.itly;
 
     mpInstance._Store.storageName = mpInstance._Helpers.createMainStorageName(
         config.workspaceToken
