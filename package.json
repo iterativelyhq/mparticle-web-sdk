@@ -1,9 +1,11 @@
 {
-    "name": "@mparticle/web-sdk",
+    "name": "@itly/mparticle-web-sdk",
     "version": "2.11.15",
     "description": "mParticle core SDK for web applications",
     "license": "Apache-2.0",
     "keywords": [
+        "itly",
+        "iteratively",
         "mparticle",
         "analytics",
         "cdp"
@@ -16,7 +18,7 @@
     ],
     "main": "dist/mparticle.common.js",
     "module": "dist/mparticle.esm.js",
-    "repository": "https://github.com/mParticle/mparticle-web-sdk",
+    "repository": "https://github.com/iterativelyhq/mparticle-web-sdk",
     "scripts": {
         "build": "ENVIRONMENT=prod BUILDALL=true rollup --config rollup.config.js",
         "build:dev": "ENVIRONMENT=dev BUILD=iife rollup --config rollup.config.js",
