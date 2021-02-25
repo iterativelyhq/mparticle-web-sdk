@@ -1,3 +1,11 @@
+# mParticle Javascript SDK (with Iteratively integration)
+
+## DEPRECATION NOTICE
+This project is no longer actively maintained. If this integration is of interest to you please contact support@iterative.ly for more information.
+
+## Usage
+By simply replacing your existing mparticle-web-sdk with this version you can validate and audit events against your Iteratively tracking plan without any additional instrumentation.
+
 <img src="https://static.mparticle.com/sdk/mp_logo_black.svg" width="280"><br>
 
 <!-- <img src="https://img.shields.io/github/release/mparticle/mparticle-web-sdk.svg?color=green"> <img src ="https://img.shields.io/npm/v/@mparticle/web-sdk.svg?color=green"> -->
